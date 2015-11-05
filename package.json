@@ -1,0 +1,16 @@
+{
+  "name": "react-zlux",
+  "version": "0.0.1",
+  "description": "react utils for zlux ",
+  "keywords":"zlux, react, redux-like,",
+  "scripts": {
+    "build:lib": "babel src --out-dir lib --stage 0",
+    "prepublish": "npm run build:lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zilong",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.2"
+  }
+}
