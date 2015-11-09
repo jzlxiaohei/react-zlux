@@ -1,8 +1,9 @@
 {
   "name": "react-zlux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react utils for zlux ",
   "keywords":"zlux, react, redux-like,",
+  "main": "./lib/index.js",
   "scripts": {
     "build:lib": "babel src --out-dir lib --stage 0",
     "prepublish": "npm run build:lib",
