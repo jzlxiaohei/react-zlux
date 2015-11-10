@@ -1,6 +1,6 @@
 {
   "name": "react-zlux",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react utils for zlux ",
   "keywords":"zlux, react, redux-like,",
   "main": "./lib/index.js",
