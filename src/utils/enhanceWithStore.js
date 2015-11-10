@@ -2,7 +2,7 @@ import {Component} from 'react';
 import getStoreShape from './getStoreShape.js'
 
 export default (WrappedContainer, store) => {
-    return class extends Component {
+    return class EnhanceWihtStore extends Component {
 
         state = {}
 
