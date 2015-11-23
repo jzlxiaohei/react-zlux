@@ -1,6 +1,6 @@
 {
   "name": "react-zlux",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "react utils for zlux ",
   "keywords":"zlux, react, redux-like,",
   "main": "./lib/index.js",
@@ -19,6 +19,6 @@
   "author": "zilong",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^0.14.2"
+    "react": ">=0.14"
   }
 }
