@@ -9,11 +9,15 @@ export default (WrappedContainer, store) => {
         constructor(props, context) {
             super(props, context)
 
+            this.__oldState = '@@stateUnInit';
+
             this.state.props = store.getState();
+
             this.unsubscribe = store.subscribe(()=> {
                 if (this.state.props == store.getState()) {
                     return;
                 }
+                this.__oldState = this.state.props;
                 this.setState({
                     props: store.getState()
                 })
@@ -33,13 +37,13 @@ export default (WrappedContainer, store) => {
             return {store: this.store};
         }
 
-        getWrappedInstance() {
-            return this.refs.wrappedInstance;
-        }
+        //getWrappedInstance() {
+        //    return this.refs.wrappedInstance;
+        //}
 
         render() {
             return (
-                <WrappedContainer ref='wrappedInstance' {...this.props} store={store}/>
+                <WrappedContainer {...this.props} store={store} __oldState={this.__oldState}/>
             )
         }
     }
